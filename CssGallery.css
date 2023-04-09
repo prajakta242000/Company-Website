@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Pappins', sans-serif;
+}
+h3{
+    text-align: center;
+    /* margin-top: 13px; */
+}
+.dream img{
+    width: 250px;
+    margin: 0 10px;
+    box-shadow: 0 0 20px 2px rgba(0, 0, 0, .1);
+    transition: 1s;
+}
+.dream img:hover{
+    transform: scale(1.1);
+    z-index: 2;
+}
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 5px 20px 0px 20px;
+}
+
+.container .heading{
+    width: 50%;
+    padding-bottom: 50px;
+
+}
+
+.container .heading h3{
+    font-size: 3em;
+    font-weight: bolder;
+    border-radius: 3px solid gray;
+    padding-bottom: 10px;
+}
+
+
+.container .heading h3 span{
+    font-weight: 100;
+    
+}   
+         
+
+.container .box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   
+    
+}
+
+.container .box .dream{
+    display: flex;
+    flex-direction: column;
+    width: 32.5%;
+    
+}
+
+.container .box .dream img{
+    width: 95%;
+    padding-bottom: 15px;
+    box-sizing: 5px;
+    border-radius: 12px;
+    /* border: 3px solid black; */
+    /* border-bottom: 15px #222; */
+    opacity: 0.8;
+    
+}
+
+.container .box .dream img:hover{
+    opacity: 1;
+}
+
+.container .btn{
+    margin: 40px 070px 0px;
+    background: #222;
+    padding: 15px 40px;
+    border-radius: 5px;
+}
+
+.container .btn a{
+    color: #fff;
+    font-size: 1.2em;
+    text-decoration: none;
+    font-weight: bolder;
+    letter-spacing: 3px;
+}
+.dream{
+    margin-left: 180px;
+}
+.box{
+    box-shadow: 3px 3px 5px lightgrey;
+}
+.dream .box image::before{
+    content: "PHOTO GALLERY";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    width: 100%;
+    margin-top: -100px;
+    opacity: 0;
+    transition: -3s;
+    transition-delay: -2s;
+    z-index: 1;
+}
+
+@media only screen and (max-width: 769px){
+    .container .box{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.container .box .dream{
+    width: 100%;
+}
+
+/* 
+@media only screen and (max-width: 1200px){
+    .dream{
+        max-width: 1200px;
+        max-inline-size: 100%;
+        block-size: auto;
+        margin-left: 180px;
+       
+    }
+    .dream{
+        width: 300px;
+    } */
+    /* #header{
+        z-index: 700;
+    }
+    .container .heading{
+        width: 100%;
+    }
+    
+    .container .heading h3{
+        font-size: 1em;
+    }
+    .dream{
+        width: 70%;
+        max-width: 2000px;
+       
+        height: auto;
+       
+    } */
+/*     
+}
+
+@media only screen and (min-width: 600px){
+    .container .heading{
+        width: 100%;
+    }
+    
+    .container .heading h3{
+        font-size: 1em;
+    }
+    .dream{
+        width: 70%;
+        max-width: 2000px;
+       
+        height: auto;
+       
+    }
+    
+} */
+
+.container .box .dream{
+    width: 100%;
+}
+
